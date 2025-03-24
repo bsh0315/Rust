@@ -28,5 +28,13 @@ fn main() {
     println!("{:.2}", float); // 소수점 2번째 짜리 까지 출력
     println!("{:>10.2}", float); // 소수점 2번째 짜리 까지 출력 및 오른쪽 정렬
                             
-    
+    let title = "TODAY'S NEWS";
+    println!("{:-^30}", title); // no variable name, pad with -, put in centre, 30 characters long
+
+    let bar = "|";
+    println!("{:<15}{:>15}", bar, bar); // no variable name, pad with space, 15 characters each, one to left, one to right
+
+    let a = "SEOUL";
+    let b = "TOKYO";
+    println!("{city1:-<15}{city2:->15}", city1 = a, city2 = b); // variable names city1 and city2, pad with -, align left/right
 }

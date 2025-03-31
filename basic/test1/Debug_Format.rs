@@ -12,5 +12,5 @@ fn main(){
     };
     println!("Person : {:?}", person);
 
-
+    
 }
